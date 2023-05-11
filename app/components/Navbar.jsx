@@ -32,18 +32,21 @@ export const Navbar = () => {
 	];
 
 	return (
-		<div className="max-w-[87.5rem] mx-auto p-4 flex justify-between bg-[#FFE6D0]">
-			<h1 className="font-ssp font-bold text-4xl">
+		<div className="max-w-[87.5rem] mx-auto p-4 flex justify-between bg-beige items-center">
+			<h1 className="font-ssp text-secondary font-bold text-4xl">
 				<Link href="/">Doughnuts</Link>
 			</h1>
 			<nav
 				className={`${
 					nav ? "right-0 z-5" : "right-full"
-				} absolute top-[4.5rem] bg-[#FFE6D0] duration-100 min-w-full`}>
-				<ul>
+				} absolute top-[4.5rem] bg-beige duration-300 w-full md:static`}>
+				<ul className="md:flex justify-end gap-4">
 					{navLinks.map((l) => (
-						<li className="py-4 text-center" key={l.name}>
-							<Link href={l.link} onClick={() => setNav(!nav)}>
+						<li className="py-4 md:py-0 text-center" key={l.name}>
+							<Link
+								className="hover:underline"
+								href={l.link}
+								onClick={() => setNav(!nav)}>
 								{l.name}
 							</Link>
 						</li>
@@ -51,7 +54,7 @@ export const Navbar = () => {
 				</ul>
 			</nav>
 			<button
-				className="border border-black h-fit rounded-md z-10"
+				className="bg-secondary text-beige h-fit rounded-md z-10 md:hidden"
 				onClick={() => setNav(!nav)}>
 				{nav ? <IoClose size={30} /> : <IoMenu size={30} />}
 			</button>

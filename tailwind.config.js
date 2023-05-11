@@ -17,6 +17,10 @@ module.exports = {
 				ssp: ["var(--font-ssp)"],
 				libre: ["var(--font-libre)"],
 			},
+			colors: {
+				beige: "#FFE6D0",
+				secondary: "#631400",
+			},
 		},
 	},
 	plugins: [],

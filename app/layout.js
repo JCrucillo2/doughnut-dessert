@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
 			<body className="font-libre">
 				<div className="bg-background-main bg-cover bg-center min-h-screen bg-repeat-y">
 					<Navbar />
-					{children}
+					<div className="max-w-[87.5rem] mx-auto">{children}</div>
 				</div>
 			</body>
 		</html>
