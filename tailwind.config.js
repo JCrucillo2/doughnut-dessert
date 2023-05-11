@@ -19,7 +19,8 @@ module.exports = {
 			},
 			colors: {
 				beige: "#FFE6D0",
-				secondary: "#631400",
+				secondary: "#6D2402",
+				background: "#F5F5DB",
 			},
 		},
 	},

@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={`${ssp.variable} ${libre.variable}`}>
 			<body className="font-libre">
-				<div className="bg-background-main bg-cover bg-center min-h-screen bg-repeat-y">
+				<div className="bg-background-main bg-cover bg-center min-h-screen bg-repeat">
 					<Navbar />
 					<div className="max-w-[87.5rem] mx-auto">{children}</div>
 				</div>

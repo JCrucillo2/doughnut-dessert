@@ -9,7 +9,7 @@ const About = () => {
 				initial={{ opacity: 0, y: 15 }}
 				animate={{ opacity: 1, y: 0 }}
 				exit={{ opacity: 0, y: 15 }}
-				className="m-4 bg-white rounded-md h-full">
+				className="m-4 bg-background rounded-md h-full">
 				<h2 className="font-ssp text-3xl font-bold rounded-t-md p-4 bg-secondary text-beige text-center">
 					About Us
 				</h2>
