@@ -15,7 +15,7 @@ export default function Home() {
 				initial={{ opacity: 0, y: 15 }}
 				animate={{ opacity: 1, y: 0 }}
 				exit={{ opacity: 0, y: 15 }}
-				className="m-4 bg-background p-4 rounded-md">
+				className="bg-background p-4 rounded-md">
 				<div className="md:flex gap-4">
 					<div>
 						<h2 className={styles.secondaryHeading}>Welcome to Doughnuts!</h2>

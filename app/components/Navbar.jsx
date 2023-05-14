@@ -32,32 +32,36 @@ export const Navbar = () => {
 	];
 
 	return (
-		<div className="max-w-[87.5rem] mx-auto p-4 flex justify-between bg-secondary items-center">
-			<h1 className="font-ssp text-beige font-bold text-4xl">
-				<Link href="/">Doughnuts</Link>
-			</h1>
-			<nav
-				className={`${
-					nav ? "right-0 z-5" : "right-full"
-				} absolute top-[4.5rem] bg-beige md:bg-transparent md:text-beige transition-[right] duration-300 w-full md:static`}>
-				<ul className="md:flex justify-end gap-4">
-					{navLinks.map((l) => (
-						<li className="py-4 md:py-0 text-center" key={l.name}>
-							<Link
-								className="hover:underline"
-								href={l.link}
-								onClick={() => setNav(!nav)}>
-								{l.name}
-							</Link>
-						</li>
-					))}
-				</ul>
-			</nav>
-			<button
-				className="text-beige h-fit z-10 md:hidden"
-				onClick={() => setNav(!nav)}>
-				{nav ? <IoClose size={30} /> : <IoMenu size={30} />}
-			</button>
+		<div className="bg-secondary">
+			<div className="max-w-[87.5rem] mx-auto p-4 flex justify-between  items-center">
+				<h1 className="font-ssp text-beige font-bold text-4xl">
+					<Link href="/">Doughnuts</Link>
+				</h1>
+				<nav
+					className={`${
+						nav ? "right-0 z-5" : "right-full"
+					} absolute top-[4.5rem] bg-secondary md:bg-transparent text-beige transition-[right] duration-300 w-full md:static`}>
+					<ul className="md:flex justify-end gap-4">
+						{navLinks.map((l) => (
+							<li
+								className="py-4 md:py-0 text-center font-bold md:font-normal"
+								key={l.name}>
+								<Link
+									className="hover:underline"
+									href={l.link}
+									onClick={() => setNav(!nav)}>
+									{l.name}
+								</Link>
+							</li>
+						))}
+					</ul>
+				</nav>
+				<button
+					className="text-beige h-fit z-10 md:hidden"
+					onClick={() => setNav(!nav)}>
+					{nav ? <IoClose size={30} /> : <IoMenu size={30} />}
+				</button>
+			</div>
 		</div>
 	);
 };

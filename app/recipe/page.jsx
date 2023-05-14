@@ -1,4 +1,8 @@
 const Recipe = () => {
-	return <div>Recipe</div>;
+	return (
+		<div>
+			<h2>Recipe</h2>
+		</div>
+	);
 };
 export default Recipe;
